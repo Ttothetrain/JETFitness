@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.Padding>
+                <OnIdiom x:TypeArguments="Thickness">
+                    <OnIdiom.Phone>40,0,40,0</OnIdiom.Phone>
+                    <OnIdiom.Tablet>140,150,140,0</OnIdiom.Tablet>
+                </OnIdiom>
+                
+            </StackLayout.Padding>
+            
+            <Label x:Name="Lbl_User" Text="Username" />
+            <Entry x:Name="Ent_User" Placeholder="Username" />
+            <Label x:Name="Lbl_Pass" Text="Password" />
+            <Entry x:Name="Ent_Pass" Placeholder="Password" />
+            <Button x:Name="Btn_Sign" Text="Sign in" Clicked="Evt_SigninAsync"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
